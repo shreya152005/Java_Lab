@@ -231,3 +231,54 @@ class StarPatterns {
 
 Output:
 <img width="443" height="330" alt="image" src="https://github.com/user-attachments/assets/d3233f75-b06c-44cc-a246-2820b730af34" />
+
+# z
+                                                Program-5
+
+import java.util.Scanner;
+
+class Distance {
+    int meter;
+    int cm;
+
+    void input(int m, int c) {
+        meter = m;
+        cm = c;
+    }
+
+    Distance add(Distance d2) {
+        Distance result = new Distance();
+        result.cm = this.cm + d2.cm;
+        result.meter = this.meter + d2.meter + (result.cm / 100);
+        result.cm = result.cm % 100;
+        return result;
+    }
+
+    void display() {
+        System.out.println(meter + " m " + cm + " cm");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Distance d1 = new Distance();
+        Distance d2 = new Distance();
+
+        int m1 = sc.nextInt();
+        int c1 = sc.nextInt();
+        int m2 = sc.nextInt();
+        int c2 = sc.nextInt();
+
+        d1.input(m1, c1);
+        d2.input(m2, c2);
+
+        Distance result = d1.add(d2);
+
+        result.display();
+
+        sc.close();
+    }
+}
+              
+Output:
+<img width="324" height="49" alt="image" src="https://github.com/user-attachments/assets/cf4137ab-5c33-4cc3-a6f0-477c88072f40" />
