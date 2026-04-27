@@ -1502,3 +1502,64 @@ public class Main {
 Output:
 <img width="332" height="33" alt="image" src="https://github.com/user-attachments/assets/2b58d4d4-3680-4191-bf1a-70b22a56558d" />
 
+# g
+                                                  Program-22
+
+//Character-by-Character
+
+import java.io.*;
+
+public class CharFileCopy {
+    public static void main(String[] args) {
+        try {
+            FileReader fr = new FileReader("source.txt");
+            FileWriter fw = new FileWriter("dest_char.txt");
+
+            int ch;
+
+            while ((ch = fr.read()) != -1) {
+                fw.write(ch);
+            }
+
+            fr.close();
+            fw.close();
+
+            System. out.println("File copied using character stream");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+//Byte-by-Byte
+
+import java.io.*;
+
+public class ByteFileCopy {
+    public static void main(String[] args) {
+        try {
+            FileInputStream fis = new FileInputStream("source.txt");
+            FileOutputStream fos = new FileOutputStream("dest_byte.txt");
+
+            int b;
+
+            while ((b = fis.read()) != -1) {
+                fos.write(b);
+            }
+
+            fis.close();
+            fos.close();
+
+            System. out.println("File copied using byte stream");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+
+Output:
+<img width="289" height="32" alt="image" src="https://github.com/user-attachments/assets/033350c2-834d-47f3-9f69-3515f45d6c32" />
+
+<img width="253" height="30" alt="image" src="https://github.com/user-attachments/assets/a93b1a96-c230-4627-8c85-f67bc0b8a83a" />
+
