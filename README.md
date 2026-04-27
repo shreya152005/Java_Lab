@@ -1891,3 +1891,30 @@ class Palindrome {
 
 Output:
 <img width="242" height="37" alt="image" src="https://github.com/user-attachments/assets/5b088575-4b07-463c-bdf7-c6c567031a02" />
+
+```
+import java.util.Scanner;
+
+class Fibonacci {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, t1 = 0, t2 = 1, next;
+
+        System.out.print("Enter number of terms: ");
+        n = sc.nextInt();
+
+        System.out.print("Fibonacci Series: " + t1 + " " + t2 + " ");
+
+        for(int i = 3; i <= n; i++) {
+            next = t1 + t2;
+            System.out.print(next + " ");
+            t1 = t2;
+            t2 = next;
+        }
+    }
+}
+```
+
+Output:
+<img width="308" height="41" alt="image" src="https://github.com/user-attachments/assets/6ee49b39-8769-458a-9792-881a2db645ce" />
+
