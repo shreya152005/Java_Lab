@@ -174,3 +174,60 @@ public class GradeCalculator {
 Output:
 <img width="311" height="33" alt="image" src="https://github.com/user-attachments/assets/587542ec-5d8d-4ee7-a460-6327221b7766" />
 
+# y
+
+                                              PROGRAM-4
+
+import java.util.Scanner;
+
+class StarPatterns {
+
+    // Method for square of stars
+    void square(int rows, int cols) {
+        System.out.println("\nSquare Pattern:");
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= cols; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Method for triangle of stars
+    void triangle(int n) {
+        System.out.println("\nTriangle Pattern:");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        StarPatterns sp = new StarPatterns();
+
+        // Input for square
+        System.out.print("Enter number of rows for square: ");
+        int rows = sc.nextInt();
+
+        System.out.print("Enter number of columns for square: ");
+        int cols = sc.nextInt();
+
+        // Input for triangle
+        System.out.print("Enter height of triangle: ");
+        int n = sc.nextInt();
+
+        // Calling methods
+        sp.square(rows, cols);
+        sp.triangle(n);
+
+        sc.close();
+    }
+}
+
+
+Output:
+<img width="443" height="330" alt="image" src="https://github.com/user-attachments/assets/d3233f75-b06c-44cc-a246-2820b730af34" />
