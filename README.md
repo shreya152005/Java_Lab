@@ -768,6 +768,62 @@ Output:
 
 <img width="670" height="537" alt="image" src="https://github.com/user-attachments/assets/c2410237-c21f-448c-bf3a-005675f5e411" />
 
+# o
+                                                  Program-12
+
+```
+class ThreadTask1 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Thread 1: " + i);
+        }
+    }
+}
+
+class ThreadTask2 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Thread 2: " + i);
+        }
+    }
+}
+
+class ThreadTask3 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Thread 3: " + i);
+        }
+    }
+}
+
+public class JoinDemo {
+    public static void main(String[] args) {
+
+        ThreadTask1 t1 = new ThreadTask1();
+        ThreadTask2 t2 = new ThreadTask2();
+        ThreadTask3 t3 = new ThreadTask3();
+
+        try {
+            t1.start();
+            t1.join();   // wait until Thread 1 completes
+
+            t2.start();
+            t2.join();   // wait until Thread 2 completes
+
+            t3.start();
+            t3.join();   // wait until Thread 3 completes
+
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        System.out.println("All threads completed execution.");
+    }
+}
+```
+
+Output:
+<img width="679" height="535" alt="image" src="https://github.com/user-attachments/assets/86af2622-eb7c-48b5-b08a-2c7e39431b01" />
 
 
 
