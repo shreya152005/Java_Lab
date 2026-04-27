@@ -1861,3 +1861,33 @@ class Armstrong {
 
 Output:
 <img width="229" height="42" alt="image" src="https://github.com/user-attachments/assets/af1c27df-0b3c-4cfb-a408-6275a39b2b9f" />
+
+```
+import java.util.Scanner;
+
+class Palindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, reverse = 0, remainder, temp;
+
+        System.out.print("Enter a number: ");
+        n = sc.nextInt();
+
+        temp = n;
+
+        while(temp != 0) {
+            remainder = temp % 10;
+            reverse = reverse * 10 + remainder;
+            temp /= 10;
+        }
+
+        if(reverse == n)
+            System.out.println("Palindrome Number");
+        else
+            System.out.println("Not Palindrome");
+    }
+}
+```
+
+Output:
+<img width="242" height="37" alt="image" src="https://github.com/user-attachments/assets/5b088575-4b07-463c-bdf7-c6c567031a02" />
