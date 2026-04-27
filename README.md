@@ -1464,4 +1464,41 @@ public class Main {
 Output:
 <img width="384" height="182" alt="image" src="https://github.com/user-attachments/assets/1a2613fd-5fad-4d87-aebd-d5e50826f12c" />
 
+# f
+                                                  Program-21
+
+```
+class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+
+public class Main {
+
+    static void checkAge(int age) throws InvalidAgeException {
+        if (age < 18 || age > 25) {
+            throw new InvalidAgeException("Age must be between 18 and 25.");
+        } else {
+            System. out.println("Valid age. Student allowed.");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        int age = 16;  
+
+        try {
+            checkAge(age);
+        } catch (InvalidAgeException e) {
+            System. out.println("Exception caught: " + e.getMessage());
+        }
+
+        System.out.println("Program continues...");
+    }
+}
+```
+
+Output:
+<img width="332" height="33" alt="image" src="https://github.com/user-attachments/assets/2b58d4d4-3680-4191-bf1a-70b22a56558d" />
 
