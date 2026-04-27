@@ -392,3 +392,63 @@ class Time {
 # b
 
 <img width="306" height="52" alt="image" src="https://github.com/user-attachments/assets/2dd41f58-014a-4c1d-a8e9-1cb73b448811" />
+
+# c
+                                                  Program-8
+
+import java.util.Scanner;
+
+class Time {
+    int hr, min, sec;
+
+    void input(int h, int m, int s) {
+        hr = h;
+        min = m;
+        sec = s;
+    }
+
+    Time add(Time t2) {
+        Time result = new Time();
+
+        result.sec = this.sec + t2.sec;
+        result.min = this.min + t2.min + (result.sec / 60);
+        result.sec = result.sec % 60;
+
+        result.hr = this.hr + t2.hr + (result.min / 60);
+        result.min = result.min % 60;
+
+        return result;
+    }
+
+    void display() {
+        System.out.println(hr + " hr " + min + " min " + sec + " sec");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Time t1 = new Time();
+        Time t2 = new Time();
+
+        int h1 = sc.nextInt();
+        int m1 = sc.nextInt();
+        int s1 = sc.nextInt();
+
+        int h2 = sc.nextInt();
+        int m2 = sc.nextInt();
+        int s2 = sc.nextInt();
+
+        t1.input(h1, m1, s1);
+        t2.input(h2, m2, s2);
+
+        Time result = t1.add(t2);
+
+        result.display();
+
+        sc.close();
+    }
+}
+
+Output:
+<img width="235" height="51" alt="image" src="https://github.com/user-attachments/assets/e0865668-805c-482b-bf1a-3ab5f7b05f83" />
+
