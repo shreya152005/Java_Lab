@@ -1505,6 +1505,7 @@ Output:
 # g
                                                   Program-22
 
+```
 //Character-by-Character
 
 import java.io.*;
@@ -1557,9 +1558,48 @@ public class ByteFileCopy {
     }
 }
 
-
+```
 Output:
 <img width="289" height="32" alt="image" src="https://github.com/user-attachments/assets/033350c2-834d-47f3-9f69-3515f45d6c32" />
 
 <img width="253" height="30" alt="image" src="https://github.com/user-attachments/assets/a93b1a96-c230-4627-8c85-f67bc0b8a83a" />
+
+# h
+                                                  Program-23
+
+```
+interface Printer {
+    void print();
+}
+
+abstract class Device {
+    abstract void start();
+
+    void stop() {
+        System.out.println("Device stopped");
+    }
+}
+
+class Computer extends Device implements Printer {
+    void start() {
+        System. out.println("Computer started");
+    }
+
+    public void print() {
+        System.out.println("Printing from computer");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Computer c = new Computer();
+        c.start();
+        c.print();
+        c.stop();
+    }
+}
+```
+
+Output:
+<img width="267" height="52" alt="image" src="https://github.com/user-attachments/assets/c5bc0a6a-ad45-45b3-857c-86e3e55d5e4a" />
 
