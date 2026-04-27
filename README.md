@@ -621,4 +621,159 @@ public class TestMatrix {
 Output:
 <img width="329" height="326" alt="image" src="https://github.com/user-attachments/assets/6ffcddcc-34d3-4622-b8df-594358535497" />
 
+# n
+
+                                                  Program-11
+
+```
+//Without Thread (Sequential Execution)
+class PrintTask1 {
+    void printNumbers() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Class 1: " + i);
+        }
+    }
+}
+
+class PrintTask2 {
+    void printNumbers() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Class 2: " + i);
+        }
+    }
+}
+
+class PrintTask3 {
+    void printNumbers() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Class 3: " + i);
+        }
+    }
+}
+
+public class SequentialDemo {
+    public static void main(String[] args) {
+        PrintTask1 t1 = new PrintTask1();
+        PrintTask2 t2 = new PrintTask2();
+        PrintTask3 t3 = new PrintTask3();
+
+        t1.printNumbers();
+        t2.printNumbers();
+        t3.printNumbers();
+    }
+}
+
+//With Thread Class
+class ThreadTask1 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Thread 1: " + i);
+        }
+    }
+}
+
+class ThreadTask2 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Thread 2: " + i);
+        }
+    }
+}
+
+class ThreadTask3 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Thread 3: " + i);
+        }
+    }
+}
+
+public class ThreadDemo {
+    public static void main(String[] args) {
+        ThreadTask1 t1 = new ThreadTask1();
+        ThreadTask2 t2 = new ThreadTask2();
+        ThreadTask3 t3 = new ThreadTask3();
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+
+//Using Runnable Interface
+class RunnableTask1 implements Runnable {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Runnable 1: " + i);
+        }
+    }
+}
+
+class RunnableTask2 implements Runnable {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Runnable 2: " + i);
+        }
+    }
+}
+
+class RunnableTask3 implements Runnable {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Runnable 3: " + i);
+        }
+    }
+}
+
+public class RunnableDemo {
+    public static void main(String[] args) {
+
+        Thread t1 = new Thread(new RunnableTask1());
+        Thread t2 = new Thread(new RunnableTask2());
+        Thread t3 = new Thread(new RunnableTask3());
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+```
+
+Output:
+
+<img width="727" height="537" alt="image" src="https://github.com/user-attachments/assets/72c093ca-5a73-4ca8-9343-7f50cddeb517" />
+
+<img width="684" height="539" alt="image" src="https://github.com/user-attachments/assets/f1162b89-8442-472f-a66e-c77b7e2e8abf" />
+
+<img width="613" height="540" alt="image" src="https://github.com/user-attachments/assets/050cd7d0-72e6-4a2d-9762-cfed94ccbce9" />
+
+<img width="699" height="536" alt="image" src="https://github.com/user-attachments/assets/60a94477-2b80-46d8-96c7-38abd3ea78ed" />
+
+<img width="635" height="535" alt="image" src="https://github.com/user-attachments/assets/4f081b72-2058-4061-bf5a-8410c5f9e91d" />
+
+<img width="575" height="536" alt="image" src="https://github.com/user-attachments/assets/a0619104-9d2f-444c-a5fd-e38600bb7423" />
+
+<img width="657" height="535" alt="image" src="https://github.com/user-attachments/assets/cfe3ba8b-2a8c-43d7-8f28-a0fd245afef3" />
+
+<img width="569" height="523" alt="image" src="https://github.com/user-attachments/assets/eb3edb10-120a-426e-b232-ba61d1e52ab4" />
+
+<img width="583" height="531" alt="image" src="https://github.com/user-attachments/assets/f4f784e8-413a-40f9-a66d-16c74b75deaf" />
+
+<img width="167" height="68" alt="image" src="https://github.com/user-attachments/assets/f65c5e92-0907-4927-85e8-f9de6ded8208" />
+
+<img width="651" height="501" alt="image" src="https://github.com/user-attachments/assets/718790ab-2d38-4c96-936c-6248a0d80eac" />
+
+<img width="670" height="537" alt="image" src="https://github.com/user-attachments/assets/c2410237-c21f-448c-bf3a-005675f5e411" />
+
+
+
+
+
+
+
+
+
 
