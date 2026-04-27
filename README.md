@@ -172,8 +172,5 @@ public class GradeCalculator {
 
 
 Output:
-<img width="322" height="33" alt="image" src="https://github.com/user-attachments/assets/8f558613-d379-4360-b3c9-6b9a3b12793a" />
-
-
-<img width="501" height="122" alt="image" src="https://github.com/user-attachments/assets/f17327cd-a84c-48a8-8579-d9470ebc1fcc" />
+<img width="311" height="33" alt="image" src="https://github.com/user-attachments/assets/587542ec-5d8d-4ee7-a460-6327221b7766" />
 
