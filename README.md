@@ -107,3 +107,6 @@ class Calculator {
 ```
 
 Output:
+
+<img width="501" height="122" alt="image" src="https://github.com/user-attachments/assets/f17327cd-a84c-48a8-8579-d9470ebc1fcc" />
+
