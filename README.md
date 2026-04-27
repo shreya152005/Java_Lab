@@ -1380,3 +1380,41 @@ public class Main {
 Output:
 <img width="362" height="87" alt="image" src="https://github.com/user-attachments/assets/119667ac-8748-4035-be0a-08040df2880b" />
 
+# w
+                                                  Program-19
+
+```
+package mypack;
+
+public class Add {
+    public int sum(int a, int b) {
+        return a + b;
+    }
+}
+package mypack.subpack;
+
+public class Square {
+    public int square(int a) {
+        return a * a;
+    }
+}
+import mypack.Add;
+import mypack.subpack.Square;
+
+//Main
+
+public class Main {
+    public static void main(String[] args) {
+
+        Add a = new Add();
+        Square s = new Square();
+
+        System.out.println("Addition: " + a.sum(10, 5));
+        System.out.println("Square: " + s.square(5));
+    }
+}
+```
+
+Output:
+<img width="412" height="44" alt="image" src="https://github.com/user-attachments/assets/ed93a710-4d0d-4048-a86c-1111350d85cd" />
+
