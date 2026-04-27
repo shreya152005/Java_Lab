@@ -1804,3 +1804,31 @@ public class Main extends JFrame implements ActionListener {
 ```
 Output:
 <img width="400" height="501" alt="image" src="https://github.com/user-attachments/assets/f7e18cd1-1503-4fca-a79b-9375b13736b4" />
+
+# j
+                                                  Program-25
+
+```
+import java.util.Scanner;
+
+class Factorial {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        long fact = 1;
+
+        System.out.print("Enter a number: ");
+        n = sc.nextInt();
+
+        for(int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+
+        System.out.println("Factorial = " + fact);
+    }
+}
+
+```
+Output:
+<img width="252" height="33" alt="image" src="https://github.com/user-attachments/assets/ea26b276-5b1e-44db-a229-c0da9e6b2fb8" />
+
