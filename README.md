@@ -1316,5 +1316,67 @@ public class PaintBrush extends JFrame {
 Output:
 <img width="825" height="548" alt="image" src="https://github.com/user-attachments/assets/d75b683b-f70a-430f-a061-3f595bc8e4c8" />
 
+# v
+                                                  Program-18
+                                                  
+```
+package mypack;
 
+public class Add {
+    public int sum(int a, int b) {
+        return a + b;
+    }
+}
+package mypack;
+
+public class Sub {
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+package mypack;
+
+public class Mul {
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+}
+package mypack;
+
+public class Div {
+    public int divide(int a, int b) {
+        return a / b;
+    }
+}
+package mypack;
+
+public class Square {
+    public int square(int a) {
+        return a * a;
+    }
+}
+
+//Main Method
+
+import mypack.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Add a = new Add();
+        Sub s = new Sub();
+        Mul m = new Mul();
+        Div d = new Div();
+        Square sq = new Square();
+
+        System.out.println("Addition: " + a.sum(10, 5));
+        System.out.println("Subtraction: " + s.subtract(10, 5));
+        System.out.println("Multiplication: " + m.multiply(10, 5));
+        System.out.println("Division: " + d.divide(10, 5));
+        System.out.println("Square: " + sq.square(5));
+    }
+}
+```
+
+Output:
+<img width="362" height="87" alt="image" src="https://github.com/user-attachments/assets/119667ac-8748-4035-be0a-08040df2880b" />
 
