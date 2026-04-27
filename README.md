@@ -455,7 +455,7 @@ Output:
 # d
                                                   Program-9
 
-
+```
 import java.util.Scanner;
 
 class ArrayOperations {
@@ -509,6 +509,7 @@ public class TestArray {
         obj.reverse();
     }
 }
+```
 
 Output:
 
