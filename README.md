@@ -1832,3 +1832,32 @@ class Factorial {
 Output:
 <img width="252" height="33" alt="image" src="https://github.com/user-attachments/assets/ea26b276-5b1e-44db-a229-c0da9e6b2fb8" />
 
+```
+import java.util.Scanner;
+
+class Armstrong {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, temp, remainder, sum = 0;
+
+        System.out.print("Enter a number: ");
+        n = sc.nextInt();
+
+        temp = n;
+
+        while(temp != 0) {
+            remainder = temp % 10;
+            sum += remainder * remainder * remainder;
+            temp /= 10;
+        }
+
+        if(sum == n)
+            System.out.println("Armstrong Number");
+        else
+            System.out.println("Not Armstrong Number");
+    }
+}
+```
+
+Output:
+<img width="229" height="42" alt="image" src="https://github.com/user-attachments/assets/af1c27df-0b3c-4cfb-a408-6275a39b2b9f" />
