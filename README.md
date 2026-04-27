@@ -279,6 +279,7 @@ class Distance {
         sc.close();
     }
 }
+<img width="321" height="51" alt="image" src="https://github.com/user-attachments/assets/5e6f989a-0359-4e60-9654-5de37b460994" />
 
 # a
                                                    Program-6
@@ -335,6 +336,8 @@ class Distance {
         sc.close();
     }
 }
+
+<img width="317" height="47" alt="image" src="https://github.com/user-attachments/assets/20cec896-006e-4ed4-8116-b7a8faa0b0f1" />
 
 # b
                                                  Program-7
