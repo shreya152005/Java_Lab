@@ -1,4 +1,4 @@
-PROGRAM-1: Create a class with 4 methods: addition,subtraction,multiplication,division and test all 4 methods in public static void main.](#xyz)
+[PROGRAM-1: Create a class with 4 methods: addition,subtraction,multiplication,division and test all 4 methods in public static void main.](#xyz)
 
 [PROGRAM-2: Write a program to test for, while and do-while loop for  the same problem](#abc)
 
