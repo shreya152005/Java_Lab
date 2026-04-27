@@ -1918,3 +1918,19 @@ class Fibonacci {
 Output:
 <img width="308" height="41" alt="image" src="https://github.com/user-attachments/assets/6ee49b39-8769-458a-9792-881a2db645ce" />
 
+```
+class Pattern {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+Output:
+<img width="238" height="111" alt="image" src="https://github.com/user-attachments/assets/a8e26f8b-7e67-41f8-a5b1-589ae349b8a3" />
