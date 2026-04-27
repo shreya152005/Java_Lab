@@ -106,7 +106,40 @@ class Calculator {
 }
 ```
 
-Output:
+# abc
+
+                                                 PROGRAM-2
+
+                                                 
+public class LoopTest {
+
+    public static void main(String[] args) {
+
+        System.out.println("Using FOR loop:");
+        for(int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+
+        System.out.println("\nUsing WHILE loop:");
+        int j = 1;
+        while(j <= 5) {
+            System.out.println(j);
+            j++;
+        }
+
+        System.out.println("\nUsing DO-WHILE loop:");
+        int k = 1;
+        do {
+            System.out.println(k);
+            k++;
+        } while(k <= 5);
+
+    }
+}
+
+Output : 
+<img width="385" height="324" alt="image" src="https://github.com/user-attachments/assets/de624b63-5392-49b5-aada-e48e9e06734f" />
+
 
 <img width="501" height="122" alt="image" src="https://github.com/user-attachments/assets/f17327cd-a84c-48a8-8579-d9470ebc1fcc" />
 
